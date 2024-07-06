@@ -1,0 +1,44 @@
+package lunatic.athenadungeon.heads;
+
+import lunatic.athenadungeon.Main;
+import org.bukkit.inventory.ItemStack;
+
+public enum HeadList {
+    DUNGEON("YWVhMDM0MDc2Y2ExMDk1OWRlOWQ1NDFjODE3Y2QyOGQyYThiMGFhZDdkOGE4YWZjMmI1NDI1M2Y2ZjBmZWQzIn19fQ==", "dungeon"),
+    MOB("YTEyMDBjNDcwYzY3MjhkZDY1N2IyNDVjMmRiYzAzMTg5MWUzY2RkOWQ5OTc5MDk4NDU2YjMzZjgxMmFmZGMzZiJ9fX0=", "mob"),
+    OWOFLUX("ODQ4NTlkMGFkZmM5M2JlMTliYjQ0MWU2ZWRmZDQzZjZiZmU2OTEyNzIzMDMzZjk2M2QwMDlhMTFjNDgyNDUxMCJ9fX0=", "owoflux"),
+    SPIRIT("ZTY3OTkxOGU1MmYzZjhmMmNhYmJiZWFjNmE5NzY4MWYyZjhhYTEwYzBiMmU4MTg1OTI4ODVhNGEwZTlkMjI3In19fQ==", "spirit"),
+    LIGHTBLUE("ZjA1MmJlMWMwNmE0YTMyNTEyOWQ2ZjQxYmI4NGYwZWExY2E2ZjlmNjllYmRmZmY0MzE2ZTc0MjQ1MWM3OWMyMSJ9fX0=", "lightblue"),
+    BLUE("Zjg2OGU2YTVjNGE0NDVkNjBhMzA1MGI1YmVjMWQzN2FmMWIyNTk0Mzc0NWQyZDQ3OTgwMGM4NDM2NDg4MDY1YSJ9fX0=", "blue"),
+    LIME("N2EyZGYzMTViNDM1ODNiMTg5NjIzMWI3N2JhZTFhNTA3ZGJkN2U0M2FkODZjMWNmYmUzYjJiOGVmMzQzMGU5ZSJ9fX0=", "lime"),
+    GREEN("YTI2ZWM3Y2QzYjZhZTI0OTk5NzEzN2MxYjk0ODY3YzY2ZTk3NDk5ZGEwNzFiZjUwYWRmZDM3MDM0MTMyZmEwMyJ9fX0=", "green"),
+    ORANGE("ZWVmMTYyZGVmODQ1YWEzZGM3ZDQ2Y2QwOGE3YmY5NWJiZGZkMzJkMzgxMjE1YWE0MWJmZmFkNTIyNDI5ODcyOCJ9fX0=", "orange"),
+    PINK("NGY4NTUyMmVlODE1ZDExMDU4N2ZmZmM3NDExM2Y0MTlkOTI5NTk4ZTI0NjNiOGNlOWQzOWNhYTlmYjZmZjVhYiJ9fX0=", "pink"),
+    AFK("ZWNjNThjYjU1YjFhMTFlNmQ4OGMyZDRkMWE2MzY2YzIzODg3ZGVlMjYzMDRiZGE0MTJjNGE1MTgyNWYxOTkifX19", "afk"),
+    PURIFICATION("NzZmMGE3OTVhNmUzNjc5OGI3YmFjNTUxM2Q0M2UzZTZjZTgxODJhZjc0NjI4ZWY4MDI3MzEzZGQxODE4Mzg3In19fQ==", "purification"),
+    CURSE("NmMzNzAxZmU3MTMxODYxZWQ0Y2JlM2MwODQ2OTIzNDAwODQ1ZTQ3MDE2NzI4M2EzMTc0NzgwN2YzZmNlNDIzYyJ9fX0=", "curse"),
+    TRANSFORMEDDIVINITY("OTQ2OTNlMzcwNTQ2N2QyYjM0ZjE4NmZlOGFiYzhmNGIyMGIyOGU1MmE5NWI1YTUyNTEwN2VlZmE1ODgxY2ExMCJ9fX0=", "transformeddivinity"),
+    MONOLITHDIVINITY("MjRlYmE1YjFiNGFkZDU1ZjMxNzg5ZTkzZTU2YWE4ZmZjZjRhOTQ0NDNlZDdiMTVmMDEzMDMwOGU5ZWY0NTUzOCJ9fX0=", "monolithdivinity"),
+    DIVINITY("N2FlNDliZTQ4YWQ0MDljNzEyODU0NmQ1ZmQ4YTlmZGVmM2U5NDJlZWUzMzcyODA2MzcwMjlkMmI3NTAzYjNhNyJ9fX0=", "divinity"),
+    COMMONGIFT("MzEyYjZkNWYwNzFiOWEzYzI3ZmY0ZmJmODFhZjBiOGI0NjE4ZTA4OGZiZTVmOWQ5ZDY4ZmEwY2E5MzhkMWY4ZCJ9fX0=", "commongift"),
+    AntiMonster("ZWRkOTljNTljM2RmOGZlZTlmY2VlODg3Njg1N2I4ZjFhNDRhMjY1NTk3OTQ3YmMxYmM5NDBmZmQ1ZTkxM2MifX19", "antimonster"),
+    SnowGolem("OWQwOTAxNWNlY2QzZWY2NWQ3ZjVhOGY4NjQzN2E3ZWE4Y2QzNGFiNjJhN2Q2ZDg1MGY5YTE3ODdhNjI3YWZhOSJ9fX0=", "snowgolem"),
+    Hedgehog("NTkyOWMwMzc3Zjg5ZjVjM2U3ZTlmMTVjNWRjZDllZmZjNjExZjRmZDFlZTE3MDNhN2ZkYjhiNDQ0MjFiODQ3NiJ9fX0=", "hedgehog");
+
+    private ItemStack item;
+    private String idTag;
+    private String prefix = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUv";
+
+    private HeadList(String texture, String id) {
+        this.item = Main.createSkull(this.prefix + texture, id);
+        this.idTag = id;
+    }
+
+    public ItemStack getItemStack() {
+        return this.item;
+    }
+
+    public String getName() {
+        return this.idTag;
+    }
+}

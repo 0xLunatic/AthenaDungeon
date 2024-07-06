@@ -1,0 +1,4 @@
+name: AthenaDungeon
+version: '${project.version}'
+main: lunatic.athenadungeon.Main
+api-version: '1.20'
